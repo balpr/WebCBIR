@@ -67,7 +67,7 @@ def search():
 	searcher = Searcher('index.csv')
 	results = searcher.search(features)
 
-	positif=['mou','sea','des']
+	positif=['PH','PHO','PHOTO']
 	observ= str(results[0][1])[:3]
 	tp = 1 if nama in positif and nama == observ else 0
 	tn = 1 if nama not in positif and nama != observ else 0
